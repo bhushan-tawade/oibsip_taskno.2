@@ -1,0 +1,473 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #020d19;
+    color: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #00b7ff;
+}
+
+nav .logo {
+    width: 20%;
+    font-size: 1.5rem;
+}
+
+nav .logo-btn ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav .logo-btn ul li {
+    margin: 0px 2rem;
+}
+
+nav li a {
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+    color: #00b7ff;
+}
+
+nav li a:hover {
+    font-size: 1.4rem;
+    color: blueviolet;
+
+}
+
+/* INTRO PAGE  */
+#page1 {
+    height: 70vh;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 0px;
+}
+
+.intro .left {
+    padding: 4rem 0;
+    width: 39%;
+    font-size: 2.5rem;
+    color: #ffffff;
+    letter-spacing: 6px;
+
+}
+
+.intro .left::before {
+    content: "<BT>";
+    position: absolute;
+    top: 9rem;
+    left: 4rem;
+    z-index: -1;
+    color: #00b7ff;
+    font-size: 15rem;
+    opacity: 0.065;
+
+}
+
+.left .name {
+    font-weight: bolder;
+    font-size: 5rem;
+    color: rgb(0, 183, 255);
+}
+
+.left #element {
+    color: rgb(148, 67, 223);
+}
+
+.intro .right {
+    width: 20%;
+}
+
+.intro .right::after {
+    position: relative;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+    background-color: rgb(21 186 255);
+    border-radius: 50%;
+    left: 10rem;
+    filter: drop-shadow(0px 0px 20px rgb(21, 114, 255));
+    animation: flyAnimation 5s linear infinite;
+}
+
+.intro .right::before {
+    position: relative;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+    background-color: rgb(21 186 255);
+    border-radius: 50%;
+    left: 5rem;
+    filter: drop-shadow(0px 0px 20px rgb(21, 114, 255));
+    animation: flyAnimation 3s ease-out infinite;
+}
+
+@keyframes flyAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+.right .id-photo {
+    width: 20rem;
+    height: 20rem;
+    filter: drop-shadow(0px 0px 20px rgb(21, 114, 255));
+    transition: all ease-in 0.2s;
+}
+
+.right .id-photo:hover {
+    filter: drop-shadow(0px 0px 40px blueviolet);
+
+  
+
+
+
+}
+
+/* page 2  */
+
+#page2 {
+    height: 100vh;
+    background-color: rgb(0 117 255);
+}
+
+#page2 h1 {
+    position: relative;
+    font-weight: lighter;
+    color: #00FFF6;
+    font-size: 3rem;
+    padding: 0 6rem;
+    top: 4rem;
+}
+
+#page2 .about {
+    padding: 7rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#page2 .about::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 305px;
+    background-color: rgb(0 117 255);
+    left: -2rem;
+    top: 27.5rem;
+    z-index: -1;
+    clip-path: polygon(23% 59%, 0% 100%, 100% 100%);
+}
+
+
+.about .left {
+    width: 30%;
+
+}
+
+.about .right {
+    width: 50%;
+    font-size: 2rem;
+
+    /* From https://css.glass */
+    padding: 2rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.about .about-image {
+    width: 60vh;
+    filter: drop-shadow(10px, 10x, 10px, 10px rgb(106, 0, 255));
+}
+
+#page2 .scroll {
+    position: relative;
+    width: fit-content;
+    transform: rotate(270deg);
+    top: -6rem;
+    opacity: 0.6;
+}
+
+
+/* page 3  */
+
+#page3 {
+    height: 100vh;
+}
+
+#page3 h1 {
+    position: relative;
+    font-weight: lighter;
+    color: #00FFF6;
+    font-size: 3rem;
+    padding: 0 6rem;
+    top: 2rem;
+}
+
+#page3 .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 0;
+}
+
+.container .skills {
+    /* border: 1px solid #ffffff; */
+    padding: 1rem;
+    width: 38vh;
+    /* From https://css.glass */
+    /* From https://css.glass */
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: 0px 0px 31px #00abff;
+    text-align: center;
+    margin-top: 1rem;
+    /* filter: drop-shadow(0px 0px 20px rgb(21, 114, 255)); */
+}
+
+.container .skills img {
+    width: 14vh;
+    height: 14vh;
+}
+
+.skill-1 {
+    transition: all ease-in-out 0.5s;
+}
+
+.skill-2 {
+    transition: all ease-in-out 0.5s;
+}
+
+.skill-3 {
+    transition: all ease-in-out 0.5s;
+}
+
+.skill-4 {
+    transition: all ease-in-out 0.5s;
+}
+
+.skill-1:hover {
+    background-color: rgb(21, 114, 255);
+}
+
+.skill-2:hover {
+    background-color: rgb(21, 114, 255);
+}
+
+.skill-3:hover {
+    background-color: rgb(21, 114, 255);
+}
+
+.skill-4:hover {
+    background-color: rgb(21, 114, 255);
+}
+
+.container:hover>.skills:not(:hover) {
+    opacity: 0.1;
+    scale: 1;
+}
+
+/* page 4  */
+#page4 h1 {
+    position: relative;
+    font-weight: lighter;
+    color: #00FFF6;
+    font-size: 3rem;
+    padding: 0 6rem;
+    top: 2rem;
+    
+}
+
+.carousel-container {
+    position: relative;
+    width: 62%;
+    overflow: hidden;
+    text-align: center;
+    margin: 4rem auto;
+    box-shadow: 0px 0px 47px rgb(21, 114, 255);
+    border-radius: 23px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+    border-radius: 50%;
+}
+
+.next {
+    right: 10px;
+    border-radius: 50%;
+}
+
+.project-btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    transition: 0.5s;
+    position: relative;
+    top: -9vh;
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+  
+  
+.project-btn:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+  }
+
+
+/* navbar */
+
+footer{
+    margin-top: 10rem;
+    height: 70vh;
+    background-color: rgb(0 117 255);
+    display: flex;
+    padding: 3rem;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer li {
+    list-style: none;
+}
+footer .about ul li a:hover {
+    color: blueviolet;
+}
+footer h1{
+    position: relative;
+    left: 1rem;
+}
+footer img {
+    /* opacity: 0.5; */
+    width: 2rem;
+    margin: 1rem 1.5rem;
+}
+footer .icons {
+    text-align: left;
+}
+footer .about ul li  {
+    margin: 0rem 1rem;
+}
+footer  ul {
+    display: flex;
+    padding: 0;
+}
+
+footer .about ul {
+    display: flex;
+}
+footer .about ul li a{
+    color: #fff;
+    text-decoration: none;
+} 
+
+.get-in-touch{
+    width: 25%;
+    height: 40vh;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 2vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+form h3 {
+    color: black;
+    font-weight: 800;
+    margin: 9px 0px ;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    transition: 0.5s;
+    position: relative;
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+    margin: 1rem 0;
+    cursor: pointer;
+}
+form input, form textarea{
+    border: 0;
+    margin: 9px 0;
+    padding: 9px;
+    outline: none;
+    background: #f5f5f5f5;
+}
+form textarea{
+    height: 10vh;
+}
